@@ -35,7 +35,7 @@ class testScene extends Phaser.Scene{
 		walls.setCollisionBetween(0, 1000);
 		
 
-		this.socket = io("http://localhost:3000");
+		this.socket = io("https://finalmultiplayerserver.herokuapp.com/");
 		this.active = false;
 
 		this.player_bullets = this.physics.add.group();
